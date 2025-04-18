@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;  
+        }
+        .Main1{
+            width: 100vw;
+            height: 100vh;
+            background-color: brown;
+            position: relative;
+    
+        }
+        #Main_Image{
+            width: 100%;
+            height: 100%;
+        }
+        .Sub11 img{
+            width: 200px;
+        }
+        .Sub11{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .Sub12{
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            color: black;
+            font-size: xx-large;
+        }
+        .Sub12 td{
+            padding-right: 70px;
+        }
+        .Sub13{
+            position: absolute;
+            top: 250px;
+            left: 50px;
+            color: black;
+            font-size: xx-large;
+           
+        }
+        .Sub13 td{
+            padding-bottom: 40px;
+            
+
+        }
+        .Sub14{
+            position: absolute;
+            right: 100px;
+            bottom: 120px;
+            font-size: xx-large;
+            color: white;
+            transition: all 0.3ms ease;
+        }
+        .Sub14:hover{
+            color: rgb(137, 5, 5);
+        }
+        .Sub15:hover{
+            color: rgb(137, 5, 5);
+        }
+        .Sub15{
+            position: absolute;
+            font-size: xx-large;
+            color: white;
+            right: 100px;
+            bottom: 40px;
+            transition: all 0.3ms ease;
+        }
+        .data{
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            border-radius: 20px;
+            padding: 5px;
+            transition: all 0.3ms ease;
+        }
+        .data:hover{
+            background-color: rgb(234, 224, 224);
+            transform: scale(1.0);
+        }
+        .Main2{
+            width: 100vw;
+            height: 100vh;
+            background-color: orange;
+            position: relative;
+        }
+        .Sub21{
+            width: 50vw;
+            background-color: brown;
+            height: 60vh;
+            position: absolute;
+            right: 5vw;
+            top: 20vh;
+        }
+        .Sub21 img{
+            width: 100%;
+            height: 100%;
+        }
+        .Sub22{
+            width: 35vw;
+            
+            position: absolute;
+            left: 5vw;
+            font-size: xx-large;
+            color: black;
+            height: 40vh;
+            top: 10vh;
+        }
+        .Main3{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            position: relative;
+
+        }
+        .Main_Sub{
+            width: 40vw;
+            height: 40vh;
+            
+        }
+        .Main_Sub img{
+            width: 100%;
+            height: 100%;
+            border: silver 2px solid;
+            border-radius: 20px;
+        }
+        #Sub31{
+           position: absolute;
+           left: 30vw;
+           top: 30vh;
+           z-index: 1;
+        }
+        #Sub31:hover #Popup1{
+            visibility: visible;
+            background-color: black;
+            border: silver 2px solid;
+            border-radius: 20px;
+            text-align: center;
+        }
+        #Sub32{
+            position: absolute;
+            top: 0vh;
+            left: 0vw;
+        }
+        #Sub33{
+            position: absolute;
+            bottom: 0vh;
+            right: 0vw;
+        }
+        .PopMain{
+            position: relative;
+
+        }
+        #Popup1{
+            width: 300px;
+            background-color: brown;
+            color: white;
+            font-size: larger;
+            position: absolute;
+            right: 0px;
+            bottom: 100%;
+            visibility: hidden;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="Main1">
+        <img src="mainimg.jpeg" alt="" id="Main_Image">
+        <div class="Sub11">
+           <img src="orig.png" alt="">
+        </div>
+        <div class="Sub12">
+           <table>
+             <tr>
+                <td>Home</td>
+                <td>About</td>
+                <td>Login</td>
+                <td>Contact</td>
+             </tr>
+           </table>
+        </div>
+        <div class="Sub13">
+           <table>
+            <tr>
+                <td><div class="data">Racing</div></td>
+            </tr>
+            <tr>
+                <td><div class="data">Models</div></td>
+            </tr>
+            <tr>
+                <td><div class="data">Speed</div></td>
+            </tr>
+            <tr>
+                <td><div class="data">Explore</div></td>
+            </tr>
+           </table>
+        </div>
+        <div class="Sub14">
+            <h1>If I'm Slow</h1>
+
+        </div>
+        <div class="Sub15">
+            <h1>Why I'm infront of you</h1>
+        </div>
+    </div>
+    <div class="Main2">
+        <div class="Sub21">
+            <img src="img2.jpeg" alt="">
+        </div>
+        <div class="Sub22">
+            <h1>BMW SUV (x5)</h1>
+            <p>BMW has a total of 22 car models available in India right now, including 10 Sedans, 7 SUVs, 4 Coupes and 1 Convertible.The starting price for a BMW car is ₹ 43.90 Lakh for the 2 Series, while the XM is the most expensive model at ₹ 2.60 Cr. </p>
+        </div>
+    </div>
+    <div class="Main3">
+        <div id="Sub31" class="Main_Sub PopMain">
+          <img src="img3.jpeg" alt="">
+          <div id="Popup1">
+            <p>BMW SUV (x5)</p>
+          </div>
+        </div>
+        <div id="Sub32" class="Main_Sub">
+            <img src="img4.jpeg" alt="">
+        </div>
+        <div id="Sub33" class="Main_Sub">
+            <img src="img5.jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>
